@@ -19,8 +19,8 @@ export class HomePage {
       //se llama el metodo load del service y se guarda dentro de users
       this.peopleservice.load()
       .then(data => {
-        this.users = data.results;
-          console.log(data.results);
+        this.users = data;
+          console.log(data);
       });
   }
 
